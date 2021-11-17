@@ -1,0 +1,112 @@
+body{
+    position: relative;
+}
+.modal__backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    height: 100vh;
+    position: absolute;
+}
+
+.modal__content{
+    /* background-color: red; */
+    /* height: 80%; */
+    /* color: black; */
+    position: relative;
+}
+.modal__content:-webkit-scrollbar {
+    display: none;
+  }
+
+.modal__closeBtn{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+.gallery__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+}
+.gallery__grid__item{
+    /* height: 250px; */
+    /* width: 250px; */
+    position: relative;
+    /* border: 2px solid red; */
+    padding: 1rem;
+}
+
+.gallery__grid__item__icon{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color: red;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.gallery__grid__img{
+    width: 100%;
+    transition: 0.2s ease all;
+}
+.gallery__grid__img:hover{
+    transform: scale(1.05);
+}
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -10px; /* gutter size offset */
+    width: auto;
+}
+
+.my-masonry-grid_column {
+/* padding-left: 7px; gutter size */
+background-clip: padding-box;
+}
+.modal__header{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal__add__imgBtn{
+    border: 0;
+    padding: 0.25rem 1rem;
+    background-color: var(--imaego);
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.modal__add__imgBtn > input{
+    opacity: 0;
+    border: 2px solid red;
+    position: absolute;
+    inset: 0;
+    height: 60px;
+
+} 
+
+video{
+    width: 100%;
+}
+.drag--background{
+    background-color: hsl(39, 100%, 80%);
+    /* color: black; */
+}
+.drag--background--drop{
+    background-color: hsl(25, 100%, 60%);
+}
+
+.grid__droppable{
+    width: 50%;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    padding: 1rem;
+}

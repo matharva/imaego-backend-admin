@@ -1,0 +1,95 @@
+.dashboard{
+    max-width: 1280px;
+    /* border: 2px solid red; */
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.dashboard__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 0fr));
+    /* border: 2px solid yellowgreen; */
+}
+
+.dashboard__header{
+    display: flex;
+    /* border: 2px solid olive; */
+    padding: 10px 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.button__section{
+    display: flex;
+    /* border: 2px solid red; */
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.actived{
+    border: 1px solid rgb(255, 142, 76);;
+}
+
+.grid__card{
+    /* background-color: red; */
+    /* border: 2px solid orange; */
+    background-color: rgb(36, 36, 36);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+}
+.grid__card__seq{
+    background-color: rgb(36, 36, 36);
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 6px;
+    /* width: 50%; */
+}
+
+.card__img__container{
+    height: auto;
+    min-height: 300px;
+    /* border: 2px solid aqua; */
+    overflow: hidden;
+}
+.card__img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+.card__title{
+    color: rgb(255, 142, 76);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.card__author{
+    font-weight: bold;
+    color: white;
+    font-size: 1.25rem;
+}
+.card__desc{
+    font-size: 1rem;
+    height: 50px;
+    padding: 0.5rem 0;
+    /* border: 2px solid red; */
+    overflow: hidden;
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+}
+.card__button__container{
+    display: flex;
+}
+.card__button{
+    padding: 0.25rem 0.75rem;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--imaego);
+}
+
+a{
+    text-decoration: none;
+}

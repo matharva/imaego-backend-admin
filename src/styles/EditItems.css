@@ -1,0 +1,144 @@
+body{
+    background-color: #121212;
+    font-family: 'Teko', sans-serif;
+    color: white;
+}
+
+.page__header{
+    color: rgb(255, 142, 76);
+}
+
+.main-container{
+    max-width: 1280px;
+    /* border: 2px solid red; */
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.banner-img-container{
+    /* border: 2px solid orange; */
+    background-color: rgb(36, 36, 36);
+    /* width: 100px; */
+    width: 80%;
+    height: auto;
+    min-height: 400px;
+    margin: 2rem auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.banner-img-container--video{
+    width: max(500px, 40%);
+    /* height: min(450px, auto); */
+    min-height: 450px;
+    height: auto;
+    
+}
+.banner-img-container-btn{
+    position: absolute;
+    /* color: white; */
+    z-index: 5;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: 0;
+    color: red;
+    /* transform: translate(-50%, -); */
+}
+.banner__img{
+    width: 100%;
+}
+.edit__form{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid olive; */
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.input-control{
+    /* border: 2px solid red; */
+    display: flex;
+}
+.edit__label{
+    flex: 0.1;
+    /* border: 2px solid green; */
+}
+.edit__input, .edit__textarea{
+    /* width: 70%; */
+    /* border: 2px solid yellow; */
+    flex: 0.7;
+    width: 300px;
+    padding: 0.25rem 0;
+    margin-left: 2rem;
+}
+.edit__input,
+.edit__textarea{
+    padding: 5px 5px;
+}
+.edit__input:focus,
+.edit__textarea:focus{
+    outline: 0;
+}
+
+
+/* 
+=========================================
+Footer Images
+=========================================
+*/
+.footer__grid{
+    /* border: 2px solid pink; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.footer__images{
+    width: 100%;
+    /* padding: 1rem; */
+}
+
+.footer__grid__item{
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    /* border: 2px solid green; */
+    height: 350px;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(36, 36, 36);
+}
+
+.footer-img-container-btn{
+    position: absolute;
+    z-index: 5;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: 0;
+    color: red;
+}
+
+/* 
+=========================================
+Footer
+=========================================
+*/
+
+.page__footer{
+    /* border: 2px solid orange; */
+    text-align: center;
+}
+.footer__btn{
+    border: 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--imaego);
+    border-radius: 4px;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 5rem;
+}
